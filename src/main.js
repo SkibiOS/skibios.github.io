@@ -1,9 +1,11 @@
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    // true for mobile device
-    document.write("mobile device");
-    window.location.href = "mobile-index.html"
-
-  }else{
-    // false for not mobile device
-    document.write("not mobile device");
-  }
+if (
+  navigator.userAgent.match(/Android/i) ||
+  navigator.userAgent.match(/iPhone/i)
+  
+) {
+  // making individual checks
+  window.location.replace("skibios.github.io/src/mobile-index.html");
+}
+const toggleNav = () => {
+  document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
+}
