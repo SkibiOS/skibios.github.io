@@ -13,3 +13,58 @@ body {
     top: 132px;
     background: #FFEB9D
 }
+body {
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    font-weight: 400;
+    color: white;
+    font-size: 25px;
+}
+h1, h2, h3, a, p, span {
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #4d4d4d;
+    height: 10%;
+
+}
+
+.nav-section {
+    padding: 3rem 1rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid #4d4d4d;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#nav-logo-section, #nav-link-section {
+    flex-basis: calc(100% / 3);
+    text-align: center;
+}
+#nav-link-section {
+    gap: 10rem;
+}
+
+#nav-social-section, #nav-contact-section {
+    flex-grow: 1;
+}
+
+#nav-logo-section {
+    justify-content: flex-start;
+    border-left: 0px;
+}
+
+#nav-social-section {
+    font-size: 30px;
+}
